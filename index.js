@@ -11,6 +11,7 @@
 
  // Habilitamos el middleware CORS en la aplicaci n
  app.use(cors());
+ 
 
  // Este middleware es responsable de analizar el cuerpo de las ...
 //solicitudes entrantes con el tipo de contenido application/json.
@@ -19,7 +20,7 @@ app.use(express.json());
 app.get('/', (req, res) => {
          try{
          // Aca va lo que quiero que funcione.
-         res.sendFile(path.join( dirname, 'index.html'));
+         res.sendFile(path.join( __dirname, 'index.html'));
          } catch(e){
          // Manejo de errores si falla lo anterior.
          res.status(500).send({'error': 'Internal server error'});

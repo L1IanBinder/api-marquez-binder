@@ -1,20 +1,39 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Mi primera Chamba</title>
-</head>
-<body>
-    
-    <div id="container"></div>
-    <header>
-        <h1>Mi primer titulo de API!</h1>
-    </header>
-    <nav>
+<html>  
+    <head>
+        <meta charset="utf-8"/>
+        <title>Mi primera chamba</title>
+    </head>
+    <body>
+        <h1> Página principal </h1>
         <ul>
-            <li>h</li>
+            <li>
+                <a href="index.html">Inicio</a></li>
+                   </ul>
+        <h2>Subtítulo</h2>
+        <p>Probando...</p> </br>
+        Hola 
+        <hr>
+        <h1>Lista</h1>
+        <ul>
+            <li>Artículo 1</li>
+            <li>Artículo 2</li>
+            <li>Artículo 3</li>
         </ul>
-    </nav>
-    <h2>Haciendo una api</h2>
-    <p>Alan gay    </p>
+        <hr>
+        <h2>Receta para hacer café con leche</h2> 
+        <ol>
+            <li>Café </li>
+            <li>Leche</li>
+        </ol>
+        <hr>
+        <h1>Imágenes</h1>
+        <img width="800" alt="No sé qué poner" src="data:image/png;base64,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"/>
+            <hr>
+            <form>
+                <label>Nombre</label>
+                <input type="text"/>
+            </form>
     </body>
-    </html>
+
+</html>
